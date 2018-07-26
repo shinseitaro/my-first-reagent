@@ -24,6 +24,11 @@ h3 {
   font-size: 1.5em
 }
 
+h4 {
+  font-size: 1.0em
+}
+
+
 a {
   text-decoration: none;
   color: #09f;
@@ -31,4 +36,94 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.atena {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  grid-gap: 20px;
+}
+
+
+.gig {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-gap: 10px;
+  border: .01rem solid #fff;
+  background: #fff;
+  display: flex;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.gig .gig__body p {
+  padding: .8rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.gig .gig__footer {
+  padding: .8rem;
+}
+
+.gig .gig-header:last-child,
+.gig .gig-body:last-child,
+.gig .gig-footer:last-child {
+  padding-bottom: .8rem;
+}
+
+.gig .gig-image {
+  padding-top: .8rem;
+}
+
+.gig .gig-image:first-child {
+  padding-top: 0;
+}
+
+.gig__artwork:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.gig {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.gig .gig__body .gig__title {
+  padding: .8rem;
+  padding-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-size: 1.2rem;
+	color: var(--secondary);
+}
+
+.gig .gig__body .gig__price {
+  padding-top: .1rem;
+  width: 100%;
+  color: var(--primary-alpha);
+}
+
+.gig .gig__body .gig__desc {
+  font-size: .8rem;
+  padding-bottom: .8rem;
+}
+
+.gig__artwork {
+  width: 100%;
+}
+
+.gig__edit {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gig__edit:hover {
+  cursor:pointer;
+  opacity: 0.4
 }
